@@ -13,9 +13,9 @@ with this plugin is highly recommended, but not essential.
 
 ## Usage ##
 
-In the following examples, 'keys' is a string of key identifiers, separated by periods.
-Key names can be found in the
-[jquery.hotkeys source](https://github.com/tzuryby/jquery.hotkeys/blob/master/jquery.hotkeys.js).
+In the following examples, *keys* is a string of key identifiers, separated by periods.
+Key names can be found
+[here](https://github.com/tzuryby/jquery.hotkeys/blob/master/jquery.hotkeys.js).
 
 With jquery.hotkeys:
 
@@ -44,7 +44,7 @@ customize their behavior:
 before the length-millisecond wait.  
 **onShort** - a function that will be executed after an insufficiently long press. 
 
-If **length** is omitted, it is set to 300 milliseconds by default.
+If *length* is omitted, it is set to 300 milliseconds by default.
 
 Usage with options:
 
