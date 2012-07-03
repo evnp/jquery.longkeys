@@ -39,14 +39,16 @@ In this case the event will fire for every key, so key checking in the handler w
 The custom events will accept a map of options that can be used to further
 customize their behavior:
 
-length
-: the minimum length of press that is considered 'long', in milliseconds
-onDown
-: a function to be executed when the key is first pressed,
-before the length-millisecond wait
-onShort
-: a function to be executed when the key is pressed,
-but released before the required amount of time
+**length**  
+The minimum length of press that is considered 'long', in milliseconds.
+
+**onDown**  
+A function to be executed when the key is first pressed,
+before the length-millisecond wait.
+
+**onShort**  
+A function to be executed when the key is pressed,
+but released before the required amount of time.
 
 If **length** is omitted, it is set to 300 milliseconds by default.
 
