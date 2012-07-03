@@ -1,12 +1,13 @@
 jquery.longkeys
 ===============
+*duration-specific key events in jQuery*
 
 jquery.longkeys adds two custom events to jQuery:
 
 **longkeydown**  
 **longkeypress**
 
-These can be used to detect key strokes of specific durations.
+These can be used to detect keystrokes of specific durations.
 
 **Note:** use of [jquery.hotkeys](https://github.com/tzuryby/jquery.hotkeys)
 with this plugin is highly recommended, but not essential.
