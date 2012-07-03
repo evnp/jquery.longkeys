@@ -42,8 +42,8 @@ customize their behavior:
 **length** - the minimum length of press that is considered 'long', in milliseconds.  
 **onDown** - a function that will be executed when the key is first pressed,
 before the length-millisecond wait.  
-**onShort** - a function that will be executed when the key is pressed,
-but released before the required amount of time.
+**onShort** - a function that will be executed after the key is released,
+if an insufficient amount of time has passed for this to be considered a 'long' press.
 
 If **length** is omitted, it is set to 300 milliseconds by default.
 
