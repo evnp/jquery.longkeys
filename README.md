@@ -40,10 +40,8 @@ The custom events will accept a map of options that can be used to further
 customize their behavior:
 
 **length** - the minimum length of press that is considered 'long', in milliseconds.
-
 **onDown** - a function that will be executed when the key is first pressed,
 before the length-millisecond wait.
-
 **onShort** - a function that will be executed when the key is pressed,
 but released before the required amount of time.
 
