@@ -1,3 +1,11 @@
+/*
+ * jquery.longkeys
+ * duration-specific key events in jQuery
+ *
+ * Copyright 2012, Evan Purcer
+ * Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
+ */
+
 (function ($) {
 
     $.each(['keydown', 'keypress'], function (i, type) {
