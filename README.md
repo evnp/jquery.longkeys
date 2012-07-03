@@ -2,7 +2,7 @@ jquery.longkeys
 ===============
 *duration-specific key events in jQuery*
 
----
+- - -
 
 jquery.longkeys adds two custom events to jQuery:
 
