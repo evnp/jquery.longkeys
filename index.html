@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="jquery.longkeys : duration-specific key events in jQuery" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>jquery.longkeys</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/evnp/jquery.longkeys">View on GitHub</a>
+
+          <h1 id="project_title">jquery.longkeys</h1>
+          <h2 id="project_tagline">duration-specific key events in jQuery</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/evnp/jquery.longkeys/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/evnp/jquery.longkeys/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p><strong>Longkeys</strong> adds two custom events to jQuery:</p>
+
+<p><strong>longkeydown</strong><br><strong>longkeypress</strong></p>
+
+<p>These can be used to detect keystrokes of specific durations.</p>
+
+<p><strong>Note:</strong> use of <a href="https://github.com/tzuryby/jquery.hotkeys">jquery.hotkeys</a>
+with this plugin is highly recommended, but not essential.</p>
+
+<h2>Usage</h2>
+
+<p>In the following examples, <strong>keys</strong> is a string of key identifiers, separated by periods.
+Key names can be found
+<a href="https://github.com/tzuryby/jquery.hotkeys/blob/master/jquery.hotkeys.js">here</a>.</p>
+
+<p>With jquery.hotkeys:</p>
+
+<pre><code>$(element).on( 'longkeydown.keys', handler);
+$(element).off('longkeydown.keys');
+</code></pre>
+
+<p>With jQuery event namespacing:</p>
+
+<pre><code>$(element).on( 'longkeydown.keys.customNameSpace', handler);
+$(element).off('longkeydown.keys.customNameSpace');
+</code></pre>
+
+<p>Without jquery.hotkeys:</p>
+
+<pre><code>$(element).on( 'longkeydown.customNameSpace', handler);
+$(element).off('longkeydown.customNameSpace');
+</code></pre>
+
+<p>In this case the event will fire for every key, so key checking in the handler will be necessary.</p>
+
+<h2>Options</h2>
+
+<p>The custom events will accept a map of options that can be used to further
+customize their behavior:</p>
+
+<p><strong>length</strong> - the minimum length of press that is considered 'long', in milliseconds.<br><strong>onDown</strong> - a function that will be executed when the key is first pressed<br><strong>onShort</strong> - a function that will be executed after an insufficiently long press. </p>
+
+<p>If <strong>length</strong> is omitted, it is set to 300 milliseconds by default.</p>
+
+<p>Usage with options:</p>
+
+<pre><code>$(element).on('longkeydown.keys', {
+    length:  500,
+    onDown:  handler1,
+    onShort: handler2
+}, handler3);
+</code></pre>
+      </section>
+    </div>
+    
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">jquery.longkeys maintained by <a href="https://github.com/evnp">Evan Purcer</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
