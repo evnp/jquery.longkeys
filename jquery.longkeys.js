@@ -18,7 +18,7 @@
                 var el = $(this)
                   , ns = binding.namespace ? '.' + binding.namespace : ''
 
-                  , data = binding.data
+                  , data         = binding.data || {}
                   , onKeyDown    = data.onDown  || function () {}
                   , onShortPress = data.onShort || function () {}
                   , reqPressLen  = data.length  || 300 // Default
