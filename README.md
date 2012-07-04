@@ -1,6 +1,6 @@
 jquery.longkeys
 ===============
-*duration-specific key events in jQuery*
+*duration-aware key events in jQuery*
 
 - - -
 
